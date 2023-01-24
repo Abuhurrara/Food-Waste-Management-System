@@ -75,7 +75,7 @@ const Restaurant = () => {
                   <th scope="row">3</th>
                   <td>Larry</td>
                   <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>@instagram</td>
                 </tr>
               </tbody>
             </table>
