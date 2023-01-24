@@ -1,0 +1,74 @@
+*{box-sizing: border-box;}
+
+.hero-section{
+
+        
+        background-image: url("../images/hero-section-cropped.png");
+        
+        background-size: cover;
+    width: 100%;
+    height: 80vh;
+    
+        
+    
+}
+
+.hero-section h3, .hero-section h1, .hero-section h4{
+    color: white;
+}
+
+.hero-section h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.hero-section h4{
+    
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    text-align-last: center;
+    margin-top: 10px;
+    
+}
+.hero-section h3{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight:normal;
+    
+    
+}
+
+.hero-buttons button{
+    color: white;
+    border: none;
+    background-color: #219D80;
+    margin: 20px 10px;
+    padding: 20px 30px 20px 30px;
+}
+
+.hero-buttons .know-us{
+    background-color: transparent;
+    border: 2px solid #219D80 ;
+}
+.donate-now, .know-us{
+    border-radius: 5px;
+    /* font-family: 'Montserrat', sans-serif; */
+    letter-spacing: 0.5px;
+}
