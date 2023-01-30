@@ -36,7 +36,7 @@ const Admin = () => {
               Restaurant
             </button>
             <hr></hr>
-            <button className="items-button" onClick={() => navigate("")}>
+            <button className="items-button" onClick={() => navigate("/admin-dashboard/ngo")}>
               NGOs
             </button>
             <hr></hr>

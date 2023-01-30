@@ -11,6 +11,7 @@ import { NGOManagementSignUp } from "./components/NGOManagementSignUp";
 import { RestaurantManagementSignUp } from "./components/RestaurantManagementSignUp";
 import { Admin } from "./components/AdminDashboard/Admin";
 import { Restaurant } from "./components/AdminDashboard/Restaurant";
+import { NGO } from "./components/AdminDashboard/Ngo";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/sign-up/ngo-management-sign-up" element={<NGOManagementSignUp/>} />
         <Route path="/admin-dashboard/admin" element={<Admin/>} />
         <Route path="/admin-dashboard/restaurant" element={<Restaurant/>} />
+        <Route path="/admin-dashboard/ngo" element={<NGO/>} />
 
       </Routes>
       <Footer/>

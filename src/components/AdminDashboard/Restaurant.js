@@ -33,7 +33,7 @@ const Restaurant = () => {
               Restaurant
             </button>
             <hr></hr>
-            <button className="items-button" onClick={() => navigate("")}>
+            <button className="items-button" onClick={() => navigate("/admin-dashboard/ngo")}>
               NGOs
             </button>
             <hr></hr>
@@ -49,33 +49,46 @@ const Restaurant = () => {
             </div>
           </div>
           <div className="restaurant-dashboard-table">
-            <table className="table">
+            <table className="table ">
               <thead className="thead-row">
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col">Restaurant</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th></th>
+                  
+                  
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td><button className="btn btn-success ml-2" >Edit  </button><button className="btn btn-danger" >Delete</button></td>
-                  <td><button className="btn btn-danger" >Delete</button></td>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@instagram</td>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td className="th-name">Al-Khidmat</td>
+                  <td><button className="btn btn-edit ml-2" >Edit  </button>  <button className="btn btn-delete" >Delete</button></td>
                 </tr>
               </tbody>
             </table>
