@@ -12,6 +12,12 @@ import { RestaurantManagementSignUp } from "./components/RestaurantManagementSig
 import { Admin } from "./components/AdminDashboard/Admin";
 import { Restaurant } from "./components/AdminDashboard/Restaurant";
 import { NGO } from "./components/AdminDashboard/Ngo";
+import { Homee } from "./components/RestaurantAdmin/Homee";
+import { Accounts } from "./components/RestaurantAdmin/Accounts";
+import { ApproveEmployee } from "./components/RestaurantAdmin/ApproveEmployee";
+import { DonationHistory } from "./components/RestaurantAdmin/DonationHistory";
+import { Active } from "./components/RestaurantAdmin/Active";
+import { ToBePicked } from "./components/RestaurantAdmin/ToBePicked";
 
 const App = () => {
   return (
@@ -29,6 +35,15 @@ const App = () => {
         <Route path="/admin-dashboard/admin" element={<Admin/>} />
         <Route path="/admin-dashboard/restaurant" element={<Restaurant/>} />
         <Route path="/admin-dashboard/ngo" element={<NGO/>} />
+        <Route path="/restaurant-admin/homee" element={<Homee/>} />
+        <Route path="/restaurant-admin/accounts" element={<Accounts/>} />
+        <Route path="/restaurant-admin/approve-employee" element={<ApproveEmployee/>} />
+        <Route path="/restaurant-admin/donation-history" element={< DonationHistory />} />
+        <Route path="/restaurant-admin/active" element={< Active />} />
+        <Route path="/restaurant-admin/to-be-picked" element={< ToBePicked />} />
+        
+        
+        
 
       </Routes>
       <Footer/>
