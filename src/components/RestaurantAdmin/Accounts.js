@@ -6,66 +6,42 @@ import { Link, useNavigate } from "react-router-dom";
 import handShaking from "../../images/hand-shaking.png";
 import donorsRegistered from "../../images/donors-registered.png";
 import "../../css/homee.css";
+import Sidebar from "../Sidebar";
 
 const Accounts = () => {
-  const navigate = useNavigate();
+  const data = [
+      {
+        title: 'Home',
+        route: "homee"
+      },
+      {
+        title: 'Accounts',
+        route: "Accounts"
+      },
+      {
+        title: 'Approve Employee',
+        route: "ApproveEmployee"
+      },
+      {
+        title: 'Donation History',
+        route: "restaurant"
+      },
+      {
+        title: 'Active',
+        route: "restaurant"
+      },
+      {
+        title: 'To Be Picked',
+        route: "restaurant"
+      }
+  ]
   return (
     <>
       <div className="sign-up-hero">
         <h1>Restaurant Dashboard(Admin)</h1>
       </div>
       <section className="menu d-flex">
-        <div className="sidebar">
-          <h5 className="abc">restaurant</h5>
-          <hr className="title-line"></hr>
-
-          <div className="items d-flex flex-column">
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/restaurant-admin/homee")}
-            >
-              Home
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/restaurant-admin/Accounts")}
-            >
-              Accounts
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/restaurant-admin/ApproveEmployee")}
-            >
-              Approve Employee
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/admin-dashboard/restaurant")}
-            >
-              Donation History
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/admin-dashboard/restaurant")}
-            >
-              Active
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/admin-dashboard/restaurant")}
-            >
-              To Be Picked
-            </button>
-            <hr></hr>
-            <button className="post-food-btn" onClick={() => navigate("/admin-dashboard/restaurant")}>Post Food</button>
-          </div>
-        </div>
+        <Sidebar header='Restaurant' data={data} /> 
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">

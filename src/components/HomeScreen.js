@@ -7,7 +7,7 @@ import { Navbar } from "./Navbar";
 import { Stats } from "./Stats";
 import { ZPattern } from "./ZPattern";
 
-const Home=()=>{
+const HomeScreen=()=>{
 return(<>
 <Hero/>
 <Stats/>
@@ -18,4 +18,4 @@ return(<>
 </>)
 }
 
-export {Home}
+export default HomeScreen

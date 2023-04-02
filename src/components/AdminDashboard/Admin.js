@@ -1,22 +1,33 @@
 import React from "react";
 
-import { Brands } from "../Brands";
-import { Navbar } from "../Navbar";
-import { Link, useNavigate } from "react-router-dom";
-
 import handShaking from '../../images/hand-shaking.png';
 import donorsRegistered from '../../images/donors-registered.png';
 import "../../css/admin.css";
+import Sidebar from "../Sidebar";
 
 const Admin = () => {
-    const navigate = useNavigate()
+    const data = [
+      {
+        title: 'Home',
+        route: "admin-dashboard/admin"
+      },
+      {
+        title: 'Restaurant',
+        route: "admin-dashboard/restaurant"
+      },
+      {
+        title: 'NGOs',
+        route: "admin-dashboard/ngo"
+      },
+  ]
   return (
     <>
       <div className="sign-up-hero">
         <h1>Admin Dashboard</h1>
       </div>
       <section className="menu d-flex">
-      <div className="sidebar">
+      <Sidebar header='Admin' data={data} /> 
+      {/* <div className="sidebar">
           <h5 className="abc">Admin</h5>
           <hr className="title-line"></hr>
 
@@ -41,7 +52,7 @@ const Admin = () => {
             </button>
             <hr></hr>
           </div>
-        </div>
+        </div> */}
         <div className="stats">
             <div className="container-fluid">
                 <div className="row">

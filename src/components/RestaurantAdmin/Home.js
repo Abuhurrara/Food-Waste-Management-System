@@ -7,7 +7,7 @@ import handShaking from "../../images/hand-shaking.png";
 import donorsRegistered from "../../images/donors-registered.png";
 import "../../css/homee.css";
 
-const Homee = () => {
+const Home = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -128,4 +128,4 @@ const Homee = () => {
     </>
   );
 };
-export { Homee };
+export default Home;
