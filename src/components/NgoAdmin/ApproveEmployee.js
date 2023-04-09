@@ -1,10 +1,7 @@
 import React from "react";
 
-import { Brands } from "../Brands";
-import { Navbar } from "../Navbar";
-import { Link, useNavigate } from "react-router-dom";
-import handShaking from "../../images/hand-shaking.png";
-import donorsRegistered from "../../images/donors-registered.png";
+import { Link } from "react-router-dom";
+
 import "../../css/homee.css";
 import Sidebar from "../Sidebar";
 
@@ -12,37 +9,33 @@ const ApproveEmployee = () => {
   const data = [
     {
       title: "Home",
-      route: "restaurant-admin/homee",
+      route: "ngo-admin/home",
     },
     {
-      title: "Accounts",
-      route: "restaurant-admin/Accounts",
+      title: "Active Post",
+      route: "ngo-admin/active-post",
+    },
+    {
+      title: "Accepted",
+      route: "ngo-admin/accepted",
+    },
+    {
+      title: "History",
+      route: "ngo-admin/history",
     },
     {
       title: "Approve Employee",
-      route: "restaurant-admin/approve-employee",
-    },
-    {
-      title: "Donation History",
-      route: "restaurant-admin/donation-history",
-    },
-    {
-      title: "Active",
-      route: "restaurant-admin/active",
-    },
-    {
-      title: "To Be Picked",
-      route: "restaurant-admin/to-be-picked",
+      route: "ngo-admin/approve-employee",
     },
   ];
 
   return (
     <>
       <div className="sign-up-hero">
-        <h1>Restaurant Dashboard(Admin)</h1>
+        <h1>NGO Dashboard(Admin)</h1>
       </div>
       <section className="menu d-flex">
-        <Sidebar header={"restaurant"} data={data} />
+        <Sidebar header={"NGO"} data={data} />
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">
@@ -124,4 +117,4 @@ const ApproveEmployee = () => {
     </>
   );
 };
-export { ApproveEmployee };
+export default ApproveEmployee;

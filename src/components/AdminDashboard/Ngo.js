@@ -4,41 +4,32 @@ import { Brands } from "../Brands";
 import { Navbar } from "../Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import "../../css/admin.css";
+import Sidebar from "../Sidebar";
 
 const NGO = () => {
-  const navigate = useNavigate();
+  
+  const data = [
+    {
+      title: 'Home',
+      route: "admin-dashboard/admin"
+    },
+    {
+      title: 'Restaurant',
+      route: "admin-dashboard/restaurant"
+    },
+    {
+      title: 'NGOs',
+      route: "admin-dashboard/ngo"
+    },
+]
   return (
     <>
       <div className="sign-up-hero">
         <h1>Admin Dashboard</h1>
       </div>
       <section className="menu d-flex">
-        <div className="sidebar">
-          <h5 className="abc">Admin</h5>
-          <hr className="title-line"></hr>
-
-          <div className="items d-flex flex-column">
-          <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/admin-dashboard/admin")}
-            >
-              Home
-            </button>
-            <hr></hr>
-            <button
-              className="items-button"
-              onClick={() => navigate("/admin-dashboard/restaurant")}
-            >
-              Restaurant
-            </button>
-            <hr></hr>
-            <button className="items-button" onClick={() => navigate("/ngo")}>
-              NGOs
-            </button>
-            <hr></hr>
-          </div>
-        </div>
+        <Sidebar header='Admin' data={data} />
+        
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">

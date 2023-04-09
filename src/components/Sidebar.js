@@ -19,6 +19,7 @@ function Sidebar({header, data}) {
       >
         {item.title}
       </button>
+      <hr></hr>
       </div>
     ))
     }

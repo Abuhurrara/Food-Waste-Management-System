@@ -1,53 +1,44 @@
 import React from "react";
 
-import { Brands } from "../Brands";
-import { Navbar } from "../Navbar";
-import { Link, useNavigate } from "react-router-dom";
-import handShaking from "../../images/hand-shaking.png";
-import donorsRegistered from "../../images/donors-registered.png";
+import { Link } from "react-router-dom";
+
 import "../../css/homee.css";
 import Sidebar from "../Sidebar";
 
-const DonationHistory = () => {
-  
+const History = () => {
   const data = [
     {
-      title: 'Home',
-      route: "restaurant-admin/homee"
+      title: "Home",
+      route: "ngo-admin/home",
     },
     {
-      title: 'Accounts',
-      route: "restaurant-admin/Accounts"
+      title: "Active Post",
+      route: "ngo-admin/active-post",
     },
     {
-      title: 'Approve Employee',
-      route: "restaurant-admin/approve-employee"
+      title: "Accepted",
+      route: "ngo-admin/accepted",
     },
     {
-      title: 'Donation History',
-      route: "restaurant-admin/donation-history"
+      title: "History",
+      route: "ngo-admin/history",
     },
     {
-      title: 'Active',
-      route: "restaurant-admin/active"
+      title: "Approve Employee",
+      route: "ngo-admin/approve-employee",
     },
-    {
-      title: 'To Be Picked',
-      route: "restaurant-admin/to-be-picked"
-    }
-]
+  ];
   return (
     <>
       <div className="sign-up-hero">
-        <h1>Restaurant Dashboard(Admin)</h1>
+        <h1>NGO Dashboard(Admin)</h1>
       </div>
       <section className="menu d-flex">
-        <Sidebar header={'Restaurant'} data={data}/>
+        <Sidebar header={"NGO"} data={data} />
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">
-              <h5 className="h5-head">Donation History</h5>
-              
+              <h5 className="h5-head">History</h5>
             </div>
           </div>
           <div className="restaurant-dashboard-table">
@@ -59,8 +50,6 @@ const DonationHistory = () => {
                   <th scope="col">Organization</th>
                   <th scope="col">Amount</th>
                   <th scope="col">Detail</th>
-                  
-                  
                 </tr>
               </thead>
               <tbody>
@@ -77,8 +66,6 @@ const DonationHistory = () => {
                   <td>Al-Khidmat Foundation</td>
                   <td>12 KG</td>
                   <td>Grain</td>
-
-
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">3</th>
@@ -86,7 +73,6 @@ const DonationHistory = () => {
                   <td>Al-Khidmat Foundation</td>
                   <td>12 KG</td>
                   <td>Lentils</td>
-
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">4</th>
@@ -108,14 +94,13 @@ const DonationHistory = () => {
                   <td>Al-Khidmat Foundation</td>
                   <td>12 KG</td>
                   <td>Mutton</td>
-                  
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        </section>
+      </section>
     </>
   );
 };
-export { DonationHistory };
+export default History;

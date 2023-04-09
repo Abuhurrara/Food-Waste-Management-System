@@ -18,35 +18,58 @@ import { ApproveEmployee } from "./components/RestaurantAdmin/ApproveEmployee";
 import { DonationHistory } from "./components/RestaurantAdmin/DonationHistory";
 import { Active } from "./components/RestaurantAdmin/Active";
 import { ToBePicked } from "./components/RestaurantAdmin/ToBePicked";
+import NgoHome from "./components/NgoAdmin/Home";
+import History from "./components/NgoAdmin/History";
+import NgoApproveEmployee from "./components/NgoAdmin/ApproveEmployee";
 
 const App = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
 
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/sign-up/ngo-employee-sign-up" element={<NGOEmployeeSignUp/>} />
-        <Route path="/sign-up/restaurant-employee-sign-up" element={<RestaurantEmployeeSignUp/>} />
-        <Route path="/sign-up/restaurant-management-sign-up" element={<RestaurantManagementSignUp/>} />
-        <Route path="/sign-up/ngo-management-sign-up" element={<NGOManagementSignUp/>} />
-        <Route path="/admin-dashboard/admin" element={<Admin/>} />
-        <Route path="/admin-dashboard/restaurant" element={<Restaurant/>} />
-        <Route path="/admin-dashboard/ngo" element={<NGO/>} />
-        <Route path="/restaurant-admin/homee" element={<Home/>} />
-        <Route path="/restaurant-admin/accounts" element={<Accounts/>} />
-        <Route path="/restaurant-admin/approve-employee" element={<ApproveEmployee/>} />
-        <Route path="/restaurant-admin/donation-history" element={< DonationHistory />} />
-        <Route path="/restaurant-admin/active" element={< Active />} />
-        <Route path="/restaurant-admin/to-be-picked" element={< ToBePicked />} />
-        
-        
-        
-
+        <Route
+          path="/sign-up/ngo-employee-sign-up"
+          element={<NGOEmployeeSignUp />}
+        />
+        <Route
+          path="/sign-up/restaurant-employee-sign-up"
+          element={<RestaurantEmployeeSignUp />}
+        />
+        <Route
+          path="/sign-up/restaurant-management-sign-up"
+          element={<RestaurantManagementSignUp />}
+        />
+        <Route
+          path="/sign-up/ngo-management-sign-up"
+          element={<NGOManagementSignUp />}
+        />
+        <Route path="/admin-dashboard/admin" element={<Admin />} />
+        <Route path="/admin-dashboard/restaurant" element={<Restaurant />} />
+        <Route path="/admin-dashboard/ngo" element={<NGO />} />
+        <Route path="/restaurant-admin/homee" element={<Home />} />
+        <Route path="/restaurant-admin/accounts" element={<Accounts />} />
+        <Route
+          path="/restaurant-admin/approve-employee"
+          element={<ApproveEmployee />}
+        />
+        <Route
+          path="/restaurant-admin/donation-history"
+          element={<DonationHistory />}
+        />
+        <Route path="/restaurant-admin/active" element={<Active />} />
+        <Route path="/restaurant-admin/to-be-picked" element={<ToBePicked />} />
+        <Route path="/ngo-admin/home" element={<NgoHome />} />
+        <Route path="/ngo-admin/history" element={<History />} />
+        <Route
+          path="/ngo-admin/approve-employee"
+          element={<NgoApproveEmployee />}
+        />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 };
