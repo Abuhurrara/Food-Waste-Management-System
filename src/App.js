@@ -21,6 +21,13 @@ import { ToBePicked } from "./components/RestaurantAdmin/ToBePicked";
 import NgoHome from "./components/NgoAdmin/Home";
 import History from "./components/NgoAdmin/History";
 import NgoApproveEmployee from "./components/NgoAdmin/ApproveEmployee";
+import ActivePost from "./components/NgoAdmin/ActivePost";
+import Accepted from "./components/NgoAdmin/Accepted";
+import HomeNgoEmp from "./components/NgoEmp/HomeNgoEmp";
+import HistoryNgoEmp from "./components/NgoEmp/HistoryNgoEmp";
+import ActivePostNgoEmp from "./components/NgoEmp/ActivePostNgoEmp";
+import AcceptedNgoEmp from "./components/NgoEmp/AcceptedNgoEmp";
+import AccountsResEmp from "./components/RestaurantEmp/AccountsResEmp";
 
 const App = () => {
   return (
@@ -68,6 +75,13 @@ const App = () => {
           path="/ngo-admin/approve-employee"
           element={<NgoApproveEmployee />}
         />
+        <Route path="/ngo-admin/active-post" element={<ActivePost />} />
+        <Route path="/ngo-admin/accepted" element={<Accepted />} />
+        <Route path="/ngo-emp/home" element={<HomeNgoEmp />} />
+        <Route path="/ngo-emp/history" element={<HistoryNgoEmp />} />
+        <Route path="/ngo-emp/active-post" element={<ActivePostNgoEmp />} />
+        <Route path="/ngo-emp/accepted" element={<AcceptedNgoEmp />} />
+        <Route path="/restaurant-emp/" element={<AccountsResEmp />} />
       </Routes>
       <Footer />
     </>
