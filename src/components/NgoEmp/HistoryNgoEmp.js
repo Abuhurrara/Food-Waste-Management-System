@@ -3,33 +3,29 @@ import React from "react";
 import "../../css/homee.css";
 import Sidebar from "../Sidebar";
 
-const History = () => {
+const HistoryNgoEmp = () => {
   const data = [
     {
       title: "Home",
-      route: "ngo-admin/home",
+      route: "ngo-emp/home",
     },
     {
       title: "Active Post",
-      route: "ngo-admin/active-post",
+      route: "ngo-emp/active-post",
     },
     {
       title: "Accepted",
-      route: "ngo-admin/accepted",
+      route: "ngo-emp/accepted",
     },
     {
       title: "History",
-      route: "ngo-admin/history",
-    },
-    {
-      title: "Approve Employee",
-      route: "ngo-admin/approve-employee",
+      route: "ngo-emp/history",
     },
   ];
   return (
     <>
       <div className="sign-up-hero">
-        <h1>NGO Dashboard(Admin)</h1>
+        <h1>NGO Dashboard(Employee)</h1>
       </div>
       <section className="menu d-flex">
         <Sidebar header={"NGO"} data={data} />
@@ -101,4 +97,4 @@ const History = () => {
     </>
   );
 };
-export default History;
+export default HistoryNgoEmp;

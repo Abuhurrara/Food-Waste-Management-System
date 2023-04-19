@@ -3,40 +3,40 @@ import React from "react";
 import "../../css/homee.css";
 import Sidebar from "../Sidebar";
 
-const History = () => {
+const ActiveResEmp = () => {
   const data = [
     {
       title: "Home",
-      route: "ngo-admin/home",
+      route: "restaurant-emp/home",
     },
     {
-      title: "Active Post",
-      route: "ngo-admin/active-post",
+      title: "Accounts",
+      route: "restaurant-emp/Accounts",
     },
     {
-      title: "Accepted",
-      route: "ngo-admin/accepted",
+      title: "Donation History",
+      route: "restaurant-emp/donation-history",
     },
     {
-      title: "History",
-      route: "ngo-admin/history",
+      title: "Active",
+      route: "restaurant-emp/active",
     },
     {
-      title: "Approve Employee",
-      route: "ngo-admin/approve-employee",
+      title: "To Be Picked",
+      route: "restaurant-emp/to-be-picked",
     },
   ];
   return (
     <>
       <div className="sign-up-hero">
-        <h1>NGO Dashboard(Admin)</h1>
+        <h1>Restaurant Dashboard(Employee)</h1>
       </div>
       <section className="menu d-flex">
-        <Sidebar header={"NGO"} data={data} />
+        <Sidebar header="Restaurant" data={data} />
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">
-              <h5 className="h5-head">History</h5>
+              <h5 className="h5-head">Active Posts</h5>
             </div>
           </div>
           <div className="restaurant-dashboard-table">
@@ -44,54 +44,61 @@ const History = () => {
               <thead className="thead-row">
                 <tr>
                   <th scope="col">ID</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Organization</th>
+                  <th scope="col">Restaurant ID</th>
+                  <th scope="col">Food Name</th>
                   <th scope="col">Amount</th>
-                  <th scope="col">Detail</th>
+                  <th scope="col">Created At</th>
+                  <th scope="col">Updated At</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="tr-history">
                   <th scope="row">1</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Rice, wheat and Barley</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">2</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Grain</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">3</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Lentils</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">4</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Water</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">5</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Chicken</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
                 <tr className="tr-history">
                   <th scope="row">6</th>
-                  <td>10-03-2023</td>
-                  <td>Al-Khidmat Foundation</td>
+                  <td>Top cafe</td>
+                  <td>Rice</td>
                   <td>12 KG</td>
-                  <td>Mutton</td>
+                  <td>10-02-2023</td>
+                  <td>10-03-2023</td>
                 </tr>
               </tbody>
             </table>
@@ -101,4 +108,4 @@ const History = () => {
     </>
   );
 };
-export default History;
+export default ActiveResEmp;

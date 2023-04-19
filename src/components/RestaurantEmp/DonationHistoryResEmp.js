@@ -3,40 +3,40 @@ import React from "react";
 import "../../css/homee.css";
 import Sidebar from "../Sidebar";
 
-const History = () => {
+const DonationHistoryResEmp = () => {
   const data = [
     {
       title: "Home",
-      route: "ngo-admin/home",
+      route: "restaurant-emp/home",
     },
     {
-      title: "Active Post",
-      route: "ngo-admin/active-post",
+      title: "Accounts",
+      route: "restaurant-emp/Accounts",
     },
     {
-      title: "Accepted",
-      route: "ngo-admin/accepted",
+      title: "Donation History",
+      route: "restaurant-emp/donation-history",
     },
     {
-      title: "History",
-      route: "ngo-admin/history",
+      title: "Active",
+      route: "restaurant-emp/active",
     },
     {
-      title: "Approve Employee",
-      route: "ngo-admin/approve-employee",
+      title: "To Be Picked",
+      route: "restaurant-emp/to-be-picked",
     },
   ];
   return (
     <>
       <div className="sign-up-hero">
-        <h1>NGO Dashboard(Admin)</h1>
+        <h1>Restaurant Dashboard(Employee)</h1>
       </div>
       <section className="menu d-flex">
-        <Sidebar header={"NGO"} data={data} />
+        <Sidebar header={"Restaurant"} data={data} />
         <div className="restaurant-dashboard-data d-flex flex-column">
           <div className="restaurant-dashboard-header">
             <div className="restaurant-header-entities d-flex justify-content-between">
-              <h5 className="h5-head">History</h5>
+              <h5 className="h5-head">Donation History</h5>
             </div>
           </div>
           <div className="restaurant-dashboard-table">
@@ -101,4 +101,4 @@ const History = () => {
     </>
   );
 };
-export default History;
+export default DonationHistoryResEmp;
